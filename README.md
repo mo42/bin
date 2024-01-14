@@ -1,9 +1,31 @@
 # calc
-Evaluate arithmetic expressions directly from the command line.
-I use this simple tool every day.
-You may want to disable globbing for this command (e.g., for the Z shell: `alias calc='noglob calc'`).
+This is my little CLI calculator. I did this once just to learn the basics of
+Yacc and Flex. But actually, I use it every day.
 
-Usage example:
+The main feature is to evaluate arithmetic expression directly from the command line:
 ```shell
 calc 21 * 2
 ```
+To use it like this, I disable globbing for this command, by putting
+```zshrc
+alias calc='noglob calc'
+```
+into the `zshrc`.
+
+# Build and Installation
+
+To build calc, you need:
+- GCC,
+- Flex, and
+- Bison
+
+Clone the repository and build the command by running:
+
+```sh
+git clone https://github.com/mo42/calc.git && cd calc
+make
+```
+
+# License
+
+This project is licensed under the MIT License - see the LICENSE file for details.

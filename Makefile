@@ -11,6 +11,10 @@ lex.yy.c: calc.l calc.tab.h
 calc.tab.c calc.tab.h: calc.y
 	$(YACC) -d calc.y
 
+install: calc
+	mkdir -p $(HOME)/.local/bin
+	cp calc $(HOME)/.local/bin
+
 .PHONY: clean
 clean :
 	rm -f *.o
