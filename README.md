@@ -19,11 +19,11 @@ To build calc, you need:
 - Flex, and
 - Bison
 
-Clone the repository and build the command by running:
+Clone the repository, build, and install the utility by running:
 
 ```sh
 git clone https://github.com/mo42/calc.git && cd calc
-make
+make install
 ```
 
 # License
