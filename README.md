@@ -1,8 +1,11 @@
-# calc
-This is my little CLI calculator. I did this once just to learn the basics of
-Yacc and Flex. But actually, I use it every day.
+# scanned.sh
+Make files look like scanned for troublesome bureaucrats who require you to print out documents, sign them, and send an electronic copy.
+```shell
+scanned.sh original.pdf original_scanned.pdf
+```
 
-The main feature is to evaluate arithmetic expression directly from the command line:
+# calc
+Evaluate arithmetic expression directly from the command line:
 ```shell
 calc 21 * 2
 ```
@@ -19,11 +22,9 @@ To build calc, you need:
 - Flex, and
 - Bison
 
-Clone the repository, build, and install the utility by running:
-
 ```sh
-git clone https://github.com/mo42/calc.git && cd calc
-make install
+git clone https://github.com/mo42/bin.git && cd bin
+make -C calc install
 ```
 
 # License
