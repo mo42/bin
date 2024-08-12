@@ -1,3 +1,10 @@
+# pass_export.sh
+Export all usernames and passwords from [pass](https://www.passwordstore.org/) the linux password manager.
+
+# sftp_rmr.py
+
+Sometimes, SFTP does not support `rm -r`. So, recursively delete all files on an SFTP server.
+
 # scanned.sh
 Make files look like scanned for troublesome bureaucrats who require you to print out documents, sign them, and send an electronic copy.
 ```shell
